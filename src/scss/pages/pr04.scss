@@ -1,0 +1,64 @@
+@use '../base/' as base;
+@use '../component/' as comp;
+
+h1 {
+	@extend %primary-header;
+}
+
+#bot-gif {
+	height: 45vh;
+	width: 100vw;
+	background: url(https://media1.giphy.com/media/ltIFdjNAasOwVvKhvx/giphy.gif?cid=ecf05e478ahwhvlclvdtp4nfv8vtkj5khqt7q45hiejkmo6g&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	z-index: -1;
+	position: absolute;
+	top: 16rem;
+	left: -22rem;
+}
+#joke-btn {
+	position: absolute;
+	top: 17rem;
+	right: 10rem;
+	cursor: pointer;
+}
+audio {
+	position: absolute;
+	top: 12rem;
+	right: 10rem;
+}
+
+#joke-txt-container {
+	max-width: 50vw;
+	min-height: 100%;
+	position: absolute;
+	top: 28rem;
+	right: 2rem;
+	border: 2px solid white;
+	padding: 1.4rem;
+	h2 {
+		text-align: center;
+		text-transform: uppercase;
+		border-bottom: 2px solid #fff;
+		margin-bottom: 2.5rem;
+	}
+	#joke-text {
+		font-size: 2.3rem;
+	}
+}
+#loading-animation {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 90dvh;
+	width: 100dvw;
+	z-index: 1;
+	background-color: #00000092;
+	svg {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50% -50%);
+	}
+}

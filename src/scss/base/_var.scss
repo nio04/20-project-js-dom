@@ -1,0 +1,28 @@
+@use 'fonts';
+
+:root {
+	--color-black: black;
+	--color-white: #fff;
+	--color-red: red;
+
+	--ff-header-primary: 'Bungee Spice', cursive;
+	--ff-header-secondary: 'Roboto Slab', serif;
+	--ff-link: 'Rubik Mono One', sans-serif;
+	--ff-general: 'Roboto', sans-serif;
+
+	--primary: white;
+	--primary-varient: #cbcbcb;
+	--secondary: green;
+	--secondary-varient: #01c601;
+	--bg: #333131;
+	--bg-varient: #5c5a5a;
+}
+
+[data-theme='dark'] {
+	--primary: green;
+	--primary-varient: #a4eca4;
+	--secondary: pink;
+	--secondary-varient: #e7cacf;
+	--bg: white;
+	--bg-varient: #7e7d7d;
+}

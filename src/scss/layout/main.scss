@@ -1,0 +1,48 @@
+@use '../base/index.scss' as abs;
+
+h1 {
+	@extend %primary-header;
+}
+
+#project-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	background-color: #3d3c3c;
+	margin: 0 1.5rem;
+	padding: 2rem;
+	border-radius: 1.8rem;
+
+	.project {
+		border: 2px solid #fff;
+		margin: 1rem;
+		padding: 2.6rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		h2 {
+			font-family: var(--ff-header-secondary);
+			text-align: center;
+			font-size: 3.8rem;
+			text-transform: uppercase;
+			margin-bottom: 2rem;
+		}
+		a:link,
+		a:visited {
+			font-family: var(--ff-link);
+			display: inline-block;
+			width: 100%;
+			text-align: right;
+			transform: translateY(2rem) translateX(2rem);
+			text-decoration: none;
+			color: var(--color-white);
+			transition: all 0.3s;
+		}
+		a:hover {
+			text-shadow: 2px 4px 5px rgba(#fff, 0.4), 2px -2px 5px rgba(#fff, 0.4);
+		}
+		a:active {
+			color: var(--color-red);
+		}
+	}
+}

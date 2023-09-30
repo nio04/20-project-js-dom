@@ -1,0 +1,12 @@
+@use '../base/' as base;
+@use '../component/' as comp;
+
+h1 {
+	@extend %primary-header;
+}
+
+#wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

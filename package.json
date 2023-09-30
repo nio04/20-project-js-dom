@@ -1,0 +1,26 @@
+{
+	"name": "20-projects-andrei",
+	"version": "1.0.0",
+	"description": "",
+	"browserslist": [
+		"> 0.2%",
+		"last 2 versions",
+		"not dead"
+	],
+	"source": "src/html/index.html",
+	"scripts": {
+		"dev": "parcel src/html/index.html",
+		"build": "parcel build --public-url ./"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@parcel/transformer-sass": "^2.9.3",
+		"@rbf/parcel-optimizer-javascript-obfuscator": "^0.2.2",
+		"parcel": "^2.9.3"
+	},
+	"dependencies": {
+		"aos": "^3.0.0-beta.6"
+	}
+}

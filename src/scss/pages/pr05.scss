@@ -1,0 +1,168 @@
+@use '../base/' as base;
+@use '../component/' as comp;
+
+#pr05 {
+	background-color: var(--primary);
+	color: var(--secondary);
+	background-image: url(../../assets/svg/heroBackground.svg);
+	overflow-y: scroll;
+}
+
+#nav--container {
+	position: fixed;
+	top: 8;
+	left: 23;
+	height: 6rem;
+	width: 95%;
+	margin: 0 auto;
+	display: block;
+	background-color: var(--bg-varient);
+	z-index: 10;
+
+	ul {
+		width: 100%;
+		position: fixed;
+		top: 25;
+		left: 20;
+		display: flex;
+		flex-wrap: wrap;
+		transform: translateY(-5);
+
+		li {
+			list-style-type: none;
+			transition: all 0.3s ease;
+			height: auto;
+			padding: 0.2rem;
+
+			&:not(:last-child) {
+				margin-right: 2rem;
+			}
+
+			&:hover {
+				outline: 1px solid var(--primary);
+				border-radius: 1rem;
+			}
+
+			&:active {
+				background-color: var(--secondary);
+				color: var(--primary);
+				outline: 1.4px solid var(--primary);
+			}
+
+			a:link,
+			a:visited {
+				padding: 1rem;
+				text-decoration: none;
+				color: var(--secondary-varient);
+				text-transform: uppercase;
+
+				&:active {
+					transform: scale(0.9);
+				}
+			}
+		}
+
+		#mode__changer--btn {
+			margin-left: auto;
+			margin-right: 5rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 0.3rem;
+			padding: 0 1.1rem;
+			background-color: transparent;
+			border: none;
+			transform: translateY(-5);
+			border-left: 5px solid var(--primary);
+			cursor: pointer;
+
+			&:focus {
+				outline: none;
+			}
+
+			#mode--info {
+				color: var(--secondary-varient);
+				font-size: 1.6rem;
+				text-transform: uppercase;
+				transition: all 0.3s;
+
+				&:active {
+					color: var(--secondary);
+				}
+			}
+
+			#mode--icon {
+				font-size: 3rem;
+				transform: translateY(-4);
+				transition: all 0.3s;
+
+				&:active {
+					transform: scale(0.9);
+				}
+			}
+		}
+	}
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 90vw;
+	h1 {
+		font-size: 5.5rem;
+		word-spacing: 3;
+	}
+	h2 {
+		font-size: 3.5rem;
+		word-spacing: 1;
+		text-transform: uppercase;
+		align-self: flex-end;
+		margin-right: 4rem;
+	}
+}
+
+main {
+	section {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 2rem;
+		border: 2px solid var(--bg);
+		position: relative;
+		h2 {
+			font-size: 3.5rem;
+			word-spacing: 1;
+			text-transform: uppercase;
+			margin-right: 4rem;
+			transform: translateY(-10rem);
+		}
+		svg {
+			position: absolute;
+			bottom: 5rem;
+			z-index: 3;
+			height: 30rem;
+			width: 30rem;
+			fill: red;
+		}
+	}
+
+	#footer #social__icons--container {
+		width: 90vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 8rem;
+		transform: translateY(10rem);
+		figure svg {
+			height: 4rem;
+			width: 4rem;
+			fill: var(--bg);
+			cursor: pointer;
+		}
+	}
+}

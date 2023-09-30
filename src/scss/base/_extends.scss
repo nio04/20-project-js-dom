@@ -1,0 +1,25 @@
+@use 'fonts';
+
+%primary-header {
+	text-align: center;
+	text-transform: uppercase;
+	word-spacing: 9px;
+	letter-spacing: -2;
+	margin: 5rem 1rem;
+	padding: 1rem;
+	border: 3px solid #fff;
+	border-radius: 1.5rem;
+	font-size: 5rem;
+	font-family: var(--ff-header-primary);
+}
+
+%center-full {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.space {
+	height: 50rem;
+	display: block;
+}

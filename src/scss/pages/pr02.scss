@@ -1,0 +1,21 @@
+@use '../base/' as base;
+@use '../component/' as comp;
+
+h1 {
+	@extend %primary-header;
+}
+
+main {
+	#img-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			margin-bottom: 3rem;
+			border: 3px solid #fff;
+			max-width: 80%;
+		}
+	}
+}
